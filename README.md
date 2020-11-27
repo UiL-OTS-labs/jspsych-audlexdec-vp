@@ -1,5 +1,5 @@
 # jspsych-audlexdec-vp
-Template [auditory lexical decision](https://en.wikipedia.org/wiki/Lexical_decision_task) experiment with _visual_ prime
+Template auditory [lexical decision](https://en.wikipedia.org/wiki/Lexical_decision_task) experiment with _visual_ prime
 
 # Task Description
 
