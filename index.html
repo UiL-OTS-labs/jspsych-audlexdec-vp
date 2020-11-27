@@ -495,10 +495,7 @@
             },
             choices: jsPsych.NO_KEYS,
             trial_duration: PRIME_DURATION,
-            post_trial_gap: PRIME_GAP_DURATION,
-            prompt: function(){
-                return '<a href="https://www.youtube.com/watch?v=q4bHzfarK0w">PRIME</a>'
-            }
+            post_trial_gap: PRIME_GAP_DURATION
         };
 
         // So this is a hack (or a clever use of Duck Typing)
@@ -536,7 +533,7 @@
             type: 'audio-keyboard-response',
             stimulus: jsPsych.timelineVariable('wordfn'), //this may nee inline func
             choices: present_word_choices,
-            prompt: "########",
+            prompt: "",
             trial_ends_after_audio: false,
             trial_duration: RESPONSE_TIMEOUT_DURATION,
             response_ends_trial: true,

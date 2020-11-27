@@ -11,7 +11,7 @@ const PRE_PRACTICE_INSTRUCTION =
     "<BR><BR>"                                          +
     "You are now going to see and hear words, one "     +
     "after the other. The words come in pairs, first "  +
-    "visual, then audio."
+    "visual, then audio."                               + //todo? anyone?
     "Your task is to indicate for each pair as "        +
     "quickly as possible whether you think "            +
     "<i>both words are real words or not</i>."          +
