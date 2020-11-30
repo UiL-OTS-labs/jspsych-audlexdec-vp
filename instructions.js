@@ -6,7 +6,7 @@
  */
 
 const PRE_PRACTICE_INSTRUCTION =
-    "<strong>Dear participant,</string><BR><BR>"        +
+    "<strong>Dear participant,</strong><BR><BR>"        +
     "Thank you for participating in this experiment."   +
     "<BR><BR>"                                          +
     "You are now going to see and hear words, one "     +

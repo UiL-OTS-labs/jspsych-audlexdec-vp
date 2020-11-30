@@ -1,5 +1,5 @@
 # jspsych-audlexdec-vp
-Auditory [lexical decision](https://en.wikipedia.org/wiki/Lexical_decision_task) experiment with _visual_ prime
+Auditory [lexical decision](https://en.wikipedia.org/wiki/Lexical_decision_task) experiment with _Visual_ Prime
 
 # Connected templates
 
@@ -14,7 +14,7 @@ Auditory [lexical decision](https://en.wikipedia.org/wiki/Lexical_decision_task)
 6. [audlexdec-vp-mp](https://github.com/UiL-OTS-labs/jspsych-audlexdec-vp-mp)
 
 # Task Description
-Combined visual and auditory lexical decision task (todo)
+Combined visual and auditory lexical decision task (todo).
 
 ## Short description
 
@@ -46,11 +46,3 @@ top ```<script>``` tags as defined in index.html, if you want your own local jsP
 4. Extract the jsPsych folder into the jspsych-vislexdec-vp folder you extracted earlier.
 5. Inside the folder is a file called index.html, double click it in order to open it
    in a browser.
-   
-
-
-
-
-
-  
-
