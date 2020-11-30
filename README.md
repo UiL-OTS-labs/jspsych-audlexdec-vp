@@ -1,13 +1,24 @@
 # jspsych-audlexdec-vp
-Template auditory [lexical decision](https://en.wikipedia.org/wiki/Lexical_decision_task) experiment with _visual_ prime
+Auditory [lexical decision](https://en.wikipedia.org/wiki/Lexical_decision_task) experiment with _visual_ prime
+
+# Connected templates
+
+### Visual Templates
+1. [vislexdec](https://github.com/UiL-OTS-labs/jspsych-vislexdec)
+2. [vislexdec-vp](https://github.com/UiL-OTS-labs/jspsych-vislexdec-vp)
+3. [vislexdec-vp-mp](https://github.com/UiL-OTS-labs/jspsych-vislexdec-vp-vm)
+
+### Audio and/or visual Templates
+4. [audlexdec](https://github.com/UiL-OTS-labs/jspsych-audlexdec-vp)
+5. [audlexdec-vp](https://github.com/UiL-OTS-labs/jspsych-audlexdec-vp)
+6. [audlexdec-vp-mp](https://github.com/UiL-OTS-labs/jspsych-audlexdec-vp-mp)
 
 # Task Description
+Combined visual and auditory lexical decision task (todo)
 
 ## Short description
 
-
 ## Longer description
-
 
 # Getting started (the easy way, working internet connection required)
 For now, the easiest way to test these templates, is:
