@@ -1,13 +1,22 @@
+////////////////
+// STIMULI
+///////////////
+
 // Item types
 const NON_WORD = "NON_WORD";
 const RELATED = "RELATED";
-const UNRELATED = "UNRELATED"
+const UNRELATED = "UNRELATED";
+const PRACTICE = "PRACTICE";
 
-const GROUPS = [
-    "group1"
-    // "group2",
-    // "group3"
-];
+// name for lists, in this case one list, one item in the list
+const LISTS = ["my_one_and_only_list"];
+
+// In case of more complex design, the above could be, for example:
+
+// const LISTS = [
+//     "my_first_list",
+//     "my_second_list"
+// ];
 
 const PRACTICE_ITEMS = [
     {
@@ -15,86 +24,96 @@ const PRACTICE_ITEMS = [
         item_type: NON_WORD, 
         word: "palve", 
         wordfn: "./sounds/palve.wav",
-        prime: "onion"
+        prime: "onion",
+        correct: 0
     },
     {
         id: 2, 
         item_type: UNRELATED, 
         word: "hot", 
         wordfn: "./sounds/hot.wav",
-        prime: "stapler"
+        prime: "stapler",
+        correct: 1
     }
 ];
 
-const LIST_GROUP1 = [
+const LIST_1 = [
     {
         id: 1, 
         item_type: NON_WORD, 
         word: "slirque", 
         wordfn: "./sounds/slirque.wav",
-        prime: "eyes"
+        prime: "eyes",
+        correct: 0
     },
     {
         id: 2, 
         item_type: NON_WORD, 
         word: "crawse", 
         wordfn: "./sounds/crawse.wav",
-        prime: "piano"
+        prime: "piano",
+        correct: 0
     },
     {
         id: 3, 
         item_type: NON_WORD, 
         word: "thwurp", 
         wordfn: "./sounds/thwurp.wav",
-        prime: "rabbit"
+        prime: "rabbit",
+        correct:0
     },
     {
         id: 4, 
         item_type: NON_WORD, 
         word: "clem", 
         wordfn: "./sounds/clem.wav",
-        prime: "flower"
+        prime: "flower",
+        correct: 0
     }, 
     {
         id: 5, 
         item_type: RELATED, 
         word: "white", 
         wordfn: "./sounds/white.wav",
-        prime: "snow"
+        prime: "snow",
+        correct: 1
     },
     {
         id: 6, 
         item_type: RELATED, 
         word: "travel", 
         wordfn: "./sounds/travel.wav",
-        prime: "suitcase"
+        prime: "suitcase",
+        correct: 1
     },
     {
         id: 7, 
         item_type: UNRELATED, 
         word: "letter", 
         wordfn: "./sounds/letter.wav",
-        prime: "garden"
+        prime: "garden",
+        correct: 1
     },
     {
         id: 8, 
         item_type: UNRELATED, 
         word: "clown", 
         wordfn: "./sounds/clown.wav",
-        prime: "forest"
+        prime: "forest",
+        correct: 1
     }
 ];
 
 
 // Add a second list of stimuli when required.
-// const LIST_GROUP2 = [
+// const LIST_2 = [
 // ...
 // ]
 
 const TEST_ITEMS = [
-    {group_name: GROUPS[0], table: LIST_GROUP1}
+    {list_name: LISTS[0], table: LIST_1}
     // Add the second group here, put a comma on the end of the line above here.
-    //{group_name: GROUPS[1], table: LIST_GROUP2}
+    //{group_name: LISTS[1], table: LIST_2}
 ];
 
 /**
@@ -106,18 +125,18 @@ const TEST_ITEMS = [
  * @returns {object} object with group and table fields
  */
 function getPracticeItems() {
-    return {group_name : "practice", table : PRACTICE_ITEMS};
+    return {list_name : "practice", table : PRACTICE_ITEMS};
 }
 
 /**
- * This function will pick a random group from the TEST_ITEMS array.
+ * This function will pick a random list from the TEST_ITEMS array.
  *
- * Returns an object with a group and a table, the group will always indicate
+ * Returns an object with a list and a table, the group will always indicate
  * which list has been chosen for the participant.
  *
- * @returns {object} object with group and table fields
+ * @returns {object} object with list and table fields
  */
-function pickRandomGroup() {
+function pickRandomList() {
     let range = function (n) {
         let empty_array = [];
         let i;
@@ -126,9 +145,8 @@ function pickRandomGroup() {
         }
         return empty_array;
     }
-    let num_groups = TEST_ITEMS.length;
-    var shuffled_range = jsPsych.randomization.repeat(range(num_groups), 1)
-    var retgroup = TEST_ITEMS[shuffled_range[0]];
-    return retgroup
+    let num_lists = TEST_ITEMS.length;
+    var shuffled_range = jsPsych.randomization.repeat(range(num_lists), 1)
+    var retlist = TEST_ITEMS[shuffled_range[0]];
+    return retlist
 }
-
