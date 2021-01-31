@@ -8,6 +8,12 @@ Please read the [generic documentation](https://github.com/UiL-OTS-labs/jspsych-
 Combined visual and Auditory lexical decision task (todo).
 
 ## Short description
+Visually primed auditory lexical decision task: the participant sees a fixation cross, visual prime and then hears a real word or a non existing word (non-word). The task is to respond as quickly as possible and indicate wether the heard word is a real word or not (or wether both the visual and the heard word are real words, it depends on the instructions.
+
+# Crucial trial phases (sub trial phases)
+- Fixation cross
+- Visual Item (Prime)
+- Auditory item (Decision phase)
 
 # Output
 

@@ -125,20 +125,15 @@
         ////////////////////////// media preloading ///////////////////////////////////////
 
         var beep_audio = ['./sounds/beep.mp3'];
-
-        // create list of all audio files for preloading
-        var practice_audio = []; //here we want (path) audio files
+        var practice_audio = [];
         let practice_items = getPracticeItems().table;
-        
         for (var i=0; i< practice_items.length; i++) {
             practice_audio.push(practice_items[i].wordfn);
             console.log('loaded practice audio as "practice_audio"');
         };
 
-        // test audio list
-        var test_audio = []; // the same...
-        let test_items = stimuli.table; //let's just have them 'before'
-        
+        var test_audio = []; 
+        let test_items = stimuli.table;
         for (var i=0; i< test_items.length; i++) {
             test_audio.push(test_items[i].wordfn);
             console.log('loaded test audio as "test_audio"');
@@ -397,16 +392,18 @@
 
         // Informed consent (consent.js)
         timeline.push(consent_procedure);      
-        // survey
+        
+        // survey (survey.js)
         timeline.push(survey_procedure);
         
         // kb layout
         timeline.push(select_keyboard_layout);
         
-        // kb important keys
+        // kb important keys (keyboard.js)
         timeline.push(keyboard_set_key_left_procedure);
         timeline.push(keyboard_set_key_right_procedure);
 
+        // test/set audio level (sountest.js)
         timeline.push(test_audio_looped);
         
         // task instruction
@@ -414,9 +411,7 @@
 
         // get ready (practice)
         timeline.push(participant_keyboard_control_start);
-        
         timeline.push(practice_procedure);
-
         timeline.push(well_done_screen);
 
         // get ready (test)
@@ -435,6 +430,7 @@
             jsPsych.init({
                 timeline: timeline,
                 preload_audio: [
+                    beep_audio,
                     practice_audio,
                     test_audio
                     ],
@@ -455,4 +451,3 @@
     })
     </script>
 </html>
-

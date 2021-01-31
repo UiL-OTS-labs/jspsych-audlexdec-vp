@@ -21,7 +21,7 @@ const LISTS = ["my_one_and_only_list"];
 const PRACTICE_ITEMS = [
     {
         id: 1, 
-        item_type: NON_WORD, 
+        item_type: PRACTICE, 
         word: "palve", 
         wordfn: "./sounds/palve.wav",
         prime: "onion",
@@ -29,7 +29,7 @@ const PRACTICE_ITEMS = [
     },
     {
         id: 2, 
-        item_type: UNRELATED, 
+        item_type: PRACTICE, 
         word: "hot", 
         wordfn: "./sounds/hot.wav",
         prime: "stapler",
@@ -112,14 +112,14 @@ const LIST_1 = [
 
 const TEST_ITEMS = [
     {list_name: LISTS[0], table: LIST_1}
-    // Add the second group here, put a comma on the end of the line above here.
-    //{group_name: LISTS[1], table: LIST_2}
+    // Add the second list here, put a comma on the end of the line above here.
+    //{list_name: LISTS[1], table: LIST_2}
 ];
 
 /**
  * Get the list of practice items
  *
- * Returns an object with a group and a table, the group will always indicate
+ * Returns an object with a list and a table, the list will always indicate
  * "practice" since it are the practice items
  *
  * @returns {object} object with group and table fields
@@ -131,7 +131,7 @@ function getPracticeItems() {
 /**
  * This function will pick a random list from the TEST_ITEMS array.
  *
- * Returns an object with a list and a table, the group will always indicate
+ * Returns an object with a list and a table, the list will always indicate
  * which list has been chosen for the participant.
  *
  * @returns {object} object with list and table fields
