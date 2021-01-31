@@ -13,8 +13,6 @@ const FEEDBACK_DURATION = 1000;
 const PRIME_GAP_DURATION = 300;
 const DEFAULT_ITI = 500;
 
-
-
 // How many items of the same type may appear in series in case of pseudorandomisation
 const MAX_SUCCEEDING_ITEMS_OF_TYPE = 2;
 
