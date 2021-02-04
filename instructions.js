@@ -5,7 +5,7 @@
  * utf8 text encoding.
  */
  
-// GENERERIC TESTS/CHECKS
+// GENERIC TESTS/CHECKS
 const GENERIC_CHECK = `
     <h3>In order to participate, please make sure that you:</h3>
     <br>
@@ -16,7 +16,7 @@ const GENERIC_CHECK = `
     <li>Have your browser's audio enabled and your volume on.</li>
     </ul>
     <h3>Please <i>maximize</i> your browser window before you continue!</h3>
-    <BR>
+    <br>
     <p>Click below if you are ready to proceed</p>
     `;
     
@@ -30,13 +30,12 @@ const PRE_PRACTICE_INSTRUCTION =
     "visual, then auditory."                            +
     "Your task is to indicate for each pair as "        +
     "quickly as possible whether you think "            +
-    "<i>both words are real words or not</i>."          +
-    " Try to make no mistakes.<br><br>"                 +
-
+    "<i>both words are real words or not</i>. "         +
+    "Try to make no mistakes.<br><br>"                  +
+    
     "After clicking OK, please put your "               +
     "<i>index</i> fingers on the two "                  +
-    "keys you've just set. Try keep them in those "     +
-    "positions during the <i>entire experiment</i>!<br>"+
+    "keys you've just set."                             +
 
     "<ul>"                                              +
     "<li>Hit the <kbd>%correct_key%</kbd> key for "     +
