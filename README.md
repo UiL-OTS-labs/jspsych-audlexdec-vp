@@ -5,7 +5,7 @@ Auditory [Lexical Decision](https://en.wikipedia.org/wiki/Lexical_decision_task)
 Please read the [generic documentation](https://github.com/UiL-OTS-labs/jspsych-uil-template-docs) for some context and scope.
 
 # Task Description
-Visually primed auditory lexical decision task: the participant sees a fixation cross, visual prime and then hears a real word or a non existing word (non-word). The task is to respond as quickly as possible and indicate wether the heard word is a real word or not (or wether both the visual and the heard word are real words, it depends on the instructions.
+Visually primed auditory lexical decision task: the participant sees a fixation cross, visual prime and then hears a real word or a non existing word (non-word). The task is to respond as quickly as possible and indicate wether the heard word is a real word or not (or wether both the visual and the heard word are real words, it depends on the instructions).
 
 Crucial trial phases (sub trial phases):
 - Fixation cross
@@ -62,10 +62,10 @@ stimulus"           | stimulus (html)      |       | string/html    |           
 "key_press"         | Keyboard response    |       | string/object? | https://en.wikipedia.org/wiki/ASCII  | yes             |                  | audio-keyboard-response
 "condition"         | Condition            |       | string         | See ```stimuli.js```                 | no              | yes              |
 "word"              | Decision phase item  |       | string/html    | See ```stimuli.js, index.html```     | no              | yes              | 
-"word_file"         | Decsion phase item   |       | string         | Path to audio "word" audio file      | no              | yes              |
-"prime"             | Prime phase item     |       | string/html    | (...)                                | no              | yes              |
-"id"                | ID/code              |       |                | (...)                                | yes             |                  |
-"trial_phase"       | Trial phase          |       |                | (...)                                | no              | yes              | 
+"word_file"         | Decsion phase item   |       | string         | Path to "word" audio file            | no              | yes              |
+"prime"             | Prime phase item     |       | string/html    | (Visual) Prime                       | no              | yes              |
+"id"                | ID/code              |       |                |                                      | yes             |                  |
+"trial_phase"       | Trial phase          |       |                |                                      | no              | yes              | 
 "useful_data_flag"  | Filter flag          |       | boolean        |                                      | no              | yes              | 
 _"expected_answer"_ | TODO change!         |       | todo           | Now (still) named "correct_response" | no              | no/yes/willbe.   | 
 "trial_type"        | What plugin was used |       |                |                                      | yes             |                  | "audio-keyboard-response"
