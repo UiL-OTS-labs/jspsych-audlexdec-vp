@@ -25,7 +25,7 @@ const PRACTICE_ITEMS = [
         word: "palve", 
         wordfn: "./sounds/palve.wav",
         prime: "onion",
-        correct: 0
+        expected_answer: 0
     },
     {
         id: 2, 
@@ -33,7 +33,7 @@ const PRACTICE_ITEMS = [
         word: "hot", 
         wordfn: "./sounds/hot.wav",
         prime: "stapler",
-        correct: 1
+        expected_answer: 1
     }
 ];
 
@@ -44,7 +44,7 @@ const LIST_1 = [
         word: "slirque", 
         wordfn: "./sounds/slirque.wav",
         prime: "eyes",
-        correct: 0
+        expected_answer: 0
     },
     {
         id: 2, 
@@ -52,7 +52,7 @@ const LIST_1 = [
         word: "crawse", 
         wordfn: "./sounds/crawse.wav",
         prime: "piano",
-        correct: 0
+        expected_answer: 0
     },
     {
         id: 3, 
@@ -60,7 +60,7 @@ const LIST_1 = [
         word: "thwurp", 
         wordfn: "./sounds/thwurp.wav",
         prime: "rabbit",
-        correct:0
+        expected_answer:0
     },
     {
         id: 4, 
@@ -68,7 +68,7 @@ const LIST_1 = [
         word: "clem", 
         wordfn: "./sounds/clem.wav",
         prime: "flower",
-        correct: 0
+        expected_answer: 0
     }, 
     {
         id: 5, 
@@ -76,7 +76,7 @@ const LIST_1 = [
         word: "white", 
         wordfn: "./sounds/white.wav",
         prime: "snow",
-        correct: 1
+        expected_answer: 1
     },
     {
         id: 6, 
@@ -84,7 +84,7 @@ const LIST_1 = [
         word: "travel", 
         wordfn: "./sounds/travel.wav",
         prime: "suitcase",
-        correct: 1
+        expected_answer: 1
     },
     {
         id: 7, 
@@ -92,7 +92,7 @@ const LIST_1 = [
         word: "letter", 
         wordfn: "./sounds/letter.wav",
         prime: "garden",
-        correct: 1
+        expected_answer: 1
     },
     {
         id: 8, 
@@ -100,7 +100,7 @@ const LIST_1 = [
         word: "clown", 
         wordfn: "./sounds/clown.wav",
         prime: "forest",
-        correct: 1
+        expected_answer: 1
     }
 ];
 
